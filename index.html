@@ -1,60 +1,11 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Huiyu Lee</title>
+    <title>Huiyu's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/66aa71580a.js"></script>
-    <style>
-      html, body {
-        background: black;
-        color: white;
-        font-family: Consolas, monaco, monospace;
-      }
-      .container {
-        margin: 50px 20px;
-        text-align: center;
-      }
-      .name {
-        user-select: none;
-      }
-      .desc {
-        font-size: 14px;
-      }
-      .tag {
-        color: grey;
-        cursor: pointer;
-        margin-bottom: 5px;
-        display: inline-block;
-      }
-      .tag span {
-        color: white;
-      }
-      .tag:hover span {
-        color: grey;
-      }
-      .links {
-        margin: 10px 0px;
-        font-size: 1.2rem;
-      }
-      .links > a {
-        color: inherit;
-        text-decoration: none;
-      }
-      .links > a:hover {
-        color: grey;
-      }
-      .sections {
-        margin: 20px 0px;
-      }
-      section {
-        width: 60%;
-        min-width: 400px;
-        margin: auto;
-        display: none;
-      }
-      iframe {
-        border: none;
-      }
-    </style>
+    <!-- <script src="https://kit.fontawesome.com/66aa71580a.js"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
   </head>
   <body>
     <div class="container">
@@ -71,19 +22,50 @@
           <a href="https://www.instagram.com/iownthegame/" target="_blank"><i class="fab fa-instagram fa-sm"></i></a>
       </div>
       <div class="sections">
-          <div class="tag">&lt;<span>Projects</span> /&gt;</div>
-          <div class="tag">&lt;<span>Travel</span> /&gt;</div>
-          <div class="tag">&lt;<span>Sports</span> /&gt;</div>
-          <div class="tag">&lt;<span>❤️</span> /&gt;</div>
+          <div class="tag current" data-section="jordan" >&lt;<span>Iownthegame</span> /&gt;</div>
+          <div class="tag" data-section="projects" >&lt;<span>Projects</span> /&gt;</div>
+          <div class="tag" data-section="travel">&lt;<span>Travel</span> /&gt;</div>
+          <div class="tag" data-section="sports">&lt;<span>Sports</span> /&gt;</div>
+          <div class="tag" data-section="myloves">&lt;<span><i class="fas fa-heart"></i></span> /&gt;</div>
       </div>
-      <section id="projects">
-          <ul style="text-align: left; font-size: 14px;">
-            <li>Fliptogo - Your smartest assistant for traveling taiwan</li>
-            <li>Starfari - Hubble images education puzzle game</li>
+      <section id="jordan">
+        <div class="desc">
+          iownthegame is my id which has been used in many places, it comes from:
+          <br/>
+          <br/>
+        </div>
+        <div class="quote">
+          When I’m on my game, I don’t think there’s anybody that can stop me. It’s a strong feeling, and it has strong implications: Once I get the ball, you’re at my mercy. There’s nothing you can say or do about it. I own the ball, <span class="highlight">I own the game</span>, I own the guy guarding me: I can actually play him like a puppet. I don’t do that in life, I don’t do that in society. But in a game– when I’m on—yes.
+        </div>
+        <br/>
+        <div class="footer">
+          -- Michael Jordan
+        </div>
+      </section>
+      <section id="projects" class="disable">
+          <ul>
+            <li>
+              <div>May. 2019 Fliptogo - Smart assistant for traveling Taiwan <a href="https://www.youtube.com/watch?v=XNDATYf-6Tw" target="_blank">video</a> <a href="https://drive.google.com/file/d/1SKc5beQliUG6e8xQSDy2s8lXR13bWK2Q/view?usp=sharing" target="_blank">slides</a></div>
+              <div class="note">Tourism Innovation and Tech Award, Tourism Bureau of Taiwan</div>
+            </li>
+            <li>
+              <div>Oct. 2018 Starfari - Hubble images educational puzzle game <a href="https://github.com/iownthegame/starfari" target="_blank">website</a></div>
+              <div class="note">NASA Space Apps Challenge 2018</div>
+            </li>
+            <li>
+              <div>Jan. 2014 Basket Dobby - Basketball stats helper <a href="http://youtube.com/watch?v=sQTxZhESjLo&t=137" target="_blank">video</a> <a href="http://youtube.com/watch?v=Eut2Q9w_DuU" target="_blank">concept</a></div>
+              <div class="note">Course project of Mobile Programming, National Taiwan University</div>
+            </li>
+              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Eut2Q9w_DuU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/sQTxZhESjLo?start=137" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <li>
+              <div>Jan. 2013 Smart Collage - Pick and collage photos AI <a href="https://youtu.be/j-BhyODYWvw" target="_blank">video</a> <a href="https://www.csie.ntu.edu.tw/~r01922028/mmai2012/index.html" target="_blank">website</a></div>
+              <div class="note">Course project of Multimedia Analysis and Indexing, National Taiwan University</div>
+            </li>
           </ul>
       </section>
-      <section id="travel">
-        <ul style="text-align: left; font-size: 14px;">
+      <section id="travel" class="disable">
+        <ul>
           <li>May. 2019 Peru 🇵🇪 (Lima, Arequipa, Chivey, Puno, Cusco)</li>
           <li>May. 2019 USA 🇺🇸 (Los Angeles)</li>
           <li>Nov. 2018 USA 🇺🇸 (New York, San Francisco)</li>
@@ -103,7 +85,7 @@
           <li>Jun. 2015 Spain 🇪🇸 (Barcelona)</li>
           <li>May. 2015 Italy 🇮🇹 (Firenze)</li>
           <li>Apr. 2015 Belgium 🇧🇪 (Brussels, Bruges)</li>
-          <li>Apr. 2015 Netherland 🇳🇱 (Amsterdam)</li>
+          <li>Apr. 2015 Netherlands 🇳🇱 (Amsterdam)</li>
           <li>Apr. 2015 UK 🇬🇧 (London)</li>
           <li>Mar. 2015 Finland 🇫🇮 (Helsinki, Saariselkä, Rovaniemi)</li>
           <li>Jan. 2015 Switzerland 🇨🇭 (Bern, Zürich, Luzern, Lausanne, Genèva, Basel, Locarno)</li>
@@ -126,15 +108,51 @@
           <li>Aug. 1996 Singapore 🇸🇬</li>
         </ul>
       </section>
-      <section id="sports">
-        <!-- <div>Dances</div> -->
-        <!-- <iframe src="https://scontent.cdninstagram.com/v/t50.2886-16/53625340_2022187701169172_8169414374113411072_n.mp4?_nc_ht=scontent.cdninstagram.com&_nc_cat=108&oe=5D7F3A50&oh=80aad2126b4fc73b5d82272493be6f3a"></iframe> -->
-        <!-- <div>Basketball highlights</div> -->
+      <section id="sports" class="disable">
+        <ul>
+          <li>Dance: Hip-Hop, House, Freestyle, K-Pop
+            <!-- <div><iframe src="https://scontent.cdninstagram.com/v/t50.2886-16/53625340_2022187701169172_8169414374113411072_n.mp4?_nc_ht=scontent.cdninstagram.com&_nc_cat=108&oe=5D7F3A50&oh=80aad2126b4fc73b5d82272493be6f3a"></iframe></div> -->
+          </li>
+          <li>Basketball</li>
+        </ul>
       </section>
-      <section id="loves">
-        <!-- <div>Inka</div> -->
-        <!-- <div>Dogs</div> -->
+      <section id="myloves" class="disable">
+        <ul>
+          <li>Dogs: An-an, Jane-jane, Cheese</li>
+          <li style="color: black;">Inka Lai</li>
+        </ul>
       </section>
     </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        let tags = document.getElementsByClassName('tag');
+        let sections = document.getElementsByTagName('section');
+        console.log(sections)
+        let onSectionClick = function() {
+          console.log('click')
+          let sectionName = this.getAttribute('data-section');
+          console.log(sectionName)
+          Array.from(sections).forEach(section => {
+            if (section.getAttribute('id') === sectionName) {
+              section.className = ''
+            } else {
+              section.className = 'disable'
+            }
+          })
+          Array.from(tags).forEach(tag => {
+            if (tag.getAttribute('data-section') === sectionName) {
+              tag.className = "tag current"
+            } else {
+              tag.className = "tag"
+            }
+          })
+        }
+
+        Array.from(tags).forEach(tag => {
+          tag.addEventListener('click', onSectionClick, false);
+        })
+      })
+    </script>
   </body>
 </html>
